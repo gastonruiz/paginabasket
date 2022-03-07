@@ -46,7 +46,7 @@ li {
 }
 
 .Tarjeta__Img__Fondo_Index {
-  background-image: url("../imagenes/basquetfondo.jpeg");
+  background-image: url("./imagenes/basquetfondo.jpeg");
   background-position:right;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ li {
 }
 
 .Tarjeta__Fondo_Contacto {
-  background-image: url("../imagenes/aroypelotafondo.jpg");
+  background-image: url("./imagenes/aroypelotafondo.jpg");
   height: 1000px;
   width: 1000px;
   border-radius: 10px;
