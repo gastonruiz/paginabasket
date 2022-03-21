@@ -2,30 +2,91 @@
 <html>
   <head>
     <title>Videos de basquet</title>
+    <!-- Bootstrap CSS -->
     <link
       href="css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="Stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!--menu principal-->
-    <div class="sticky">
-      <ul>
-        <li class="listicky"><a href="index.html">Inicio</a></li>
-        <li class="listicky"><a href="Contacto.html">Contacto</a></li>
-        <li class="listicky"><a href="Galeria.html">Galeria</a></li>
-        <li class="listicky"><a href="">Videos</a></li>
-        <li class="listicky"><a href="venta.html">Venta</a></li>
-      </ul>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="Contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Videos.html">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="venta.html">Venta</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Busqueda"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
-    <!--  -->
 
     <!--Seccion de videos de basquet de youtube-->
-    <h1 class="f">Videos de Basketball</h1>
-    <h3>Aqui veras diferentes videos relacionados al basquet</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="f display-1 pt-5">Videos de Basketball</h1>
+          <h3
+            class="animate__animated animate__pulse animate__infinite pb-5 pt-5"
+          >
+            Aqui veras diferentes videos relacionados al basquet
+          </h3>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
