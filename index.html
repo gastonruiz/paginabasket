@@ -18,38 +18,102 @@
   </head>
   <body>
     <!--menu principal-->
-    <main class="contendor__general">
-      <div class="sticky">
-        <ul>
-          <li class="listicky"><a href="">Inicio</a></li>
-          <li class="listicky"><a href="Contacto.html">Contacto</a></li>
-          <li class="listicky"><a href="Galeria.html">Galeria</a></li>
-          <li class="listicky"><a href="Videos.html">Videos</a></li>
-          <li class="listicky"><a href="venta.html">Venta</a></li>
-        </ul>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="Contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Videos.html">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="venta.html">Venta</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Busqueda"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
+    </div>
 
-      <div class="Tarjeta__Img__Fondo_Index  h1anim animate__animated animate__flash">
-        <h1 class="Titulos">Solo Basquet</h1>
-        <h2 class="Titulos animate__animated animate__fadeInBottomLeft">
-          Un sitio donde encontraras todo lo relacionado al Basketball
-        </h2>
-      </div>
-
-      <br />
-
-      <div class="contenedordeimgytexto">
-        <div class="contenedordeimg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1
+            class="display-1 animate__animated animate__zoomIn animate__slower"
+          >
+            Solo Basquet
+          </h1>
           <img
-            src="../imagenes/portada.jpg"
+            src="./imagenes/basquetfondo11.jpg"
+            alt="sosteniendo balon"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-4 anim animate__animated animate__fadeIn animate__slower">
+      <h2
+        class="display-5 text-center"
+        class="Titulos animate__animated animate__fadeInBottomLeft"
+      >
+        Un sitio donde encontraras todo lo relacionado al Basketball
+      </h2>
+    </div>
+
+    <br />
+
+    <div class="container-fluid pt-5 pb-5">
+      <div class="row">
+        <div class="clearfix">
+          <img
+            src="./imagenes/portada.jpg"
+            class="col-md-6 float-md-end mb-3 ms-md-3 mt-5 pt-4"
             alt="un partido"
             width="400"
             height="400"
           />
-        </div>
-        <div class="contenedordetexto">
-          <h2>Historia del basquet</h2>
-          <p>
+          <h2 class="display-5 text-center">Historia del basquet</h2>
+          <p class="lead pt-4">
             El básquetbol es el único deporte de origen Norteamericano, auque su
             paternidad se debe a un nativo del Canadá, (debe aclararse que en el
             caso del béisbol se tienen antecedentes en otros países, por lo que
@@ -76,8 +140,11 @@
             encaminados a resolver la molesta situación por la que atravesaban
             durante esos meses. Por tal motivo, en ese tiempo, el Dr. Gulick
             sugirió al Dr. Naismith que en unión del Barón Nisl Posse en
-            Martha’s Vineijard, estudiara la forma de resolver la situación. El
-            Dr. Naismith siguió el consejo y encontró que, auque el sistema
+            Martha’s Vineijard, estudiara la forma de resolver la situación.
+          </p>
+
+          <p class="lead">
+            El Dr. Naismith siguió el consejo y encontró que, auque el sistema
             sueco de gimnasia contenía muchos principios valiosos, ninguno de
             ellos resolvería el problema de inmediato. Esto fue lo que informó
             al Dr. Gulick a su regreso a Springfield en el otoño de 1891. Cunado
@@ -103,8 +170,11 @@
             soccer y se encontró al vigilante del gimnasio, Mr. Stebbins, a
             quien preguntó si tenia 2 cajas cuadradas. El guardia contestó que
             no, pero que en su defecto podría prestarle dos cestos de los que en
-            Norteamérica eran empleados para recolectar manzanas. Los
-            investigadores de la historia del baloncesto difieren en lo
+            Norteamérica eran empleados para recolectar manzanas.
+          </p>
+
+          <p class="lead">
+            Los investigadores de la historia del baloncesto difieren en lo
             relacionado al uso que se daba a éstos cestos. Otros mencionan que
             en ellos se recolectaba duraznos, manzanas, melocotones, lo cierto
             es que eran usados para la recolección de frutas. El Dr. Naismith
@@ -134,22 +204,26 @@
           </p>
         </div>
       </div>
-      <!--pie de pagina-->
-      <footer>
-        <div class="card text-warning bg-dark">
-          <div class="card-header pt-3" >
-            Autor
-          </div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0 ps-2">
-              <p> Gaston Ruiz</p>
-              
-              <footer class="blockquote-footer">todos los derechos reservados <cite title="Source Title">Copyright:2022</cite></footer>
-            </blockquote>
-          </div>
+    </div>
+
+    <!--pie de pagina-->
+
+    <footer>
+      <div class="card text-warning bg-dark">
+        <div class="card-header pt-3">Autor</div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0 ps-2">
+            <p>Gaston Ruiz</p>
+
+            <footer class="blockquote-footer">
+              todos los derechos reservados
+              <cite title="Source Title">Copyright:2022</cite>
+            </footer>
+          </blockquote>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+
     <script
       src="js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -4,99 +4,159 @@
     <title>Enlaces</title>
     <!-- Bootstrap CSS -->
     <link
-    href="css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
-    <link rel="Stylesheet" href="style.css" />
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="Stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!--menu principal-->
-    <div class="sticky">
-      <ul>
-        <li class="listicky"><a href="index.html">Inicio</a></li>
-        <li class="listicky"><a href="">Contacto</a></li>
-        <li class="listicky"><a href="Galeria.html">Galeria</a></li>
-        <li class="listicky"><a href="Videos.html">Videos</a></li>
-        <li class="listicky"><a href="venta.html">Venta</a></li>
-      </ul>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="Contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Videos.html">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="venta.html">Venta</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Busqueda"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
 
-    <div class="Tarjeta__Fondo_Contacto container-fluid">
-      <h1 class="Tarjeta__Letras animate__animated animate__rotateInUpLeft">Formulario de inscripcion</h1>
+    <div class="container-fluid">
+      <h1 class="animate__animated animate__rotateInUpLeft display-3">
+        Formulario de inscripcion
+      </h1>
 
       <!--datos del usario usando formularios-->
-
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class=" fs-2 form-label text-warning text-primary text-opacity-75 animate__animated animate__slideInRight" >Direccion de Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="TuEmail@example.com">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-3 display-5">
+            <label
+              for="exampleFormControlInput1"
+              class="fs-2 form-label text-warning text-primary text-opacity-75 animate__animated animate__slideInRight"
+              >Direccion de Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="TuEmail@ejemplo.com"
+            />
+          </div>
+          <div class="mb-3 display-5">
+            <label
+              for="exampleFormControlTextarea1"
+              class="fs-2 form-label text-warning text-primary text-opacity-75 animate__animated animate__slideInRight"
+              >Deja un comentario</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <input type="submit" class="btn btn-outline-warning" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class=" fs-2 form-label text-warning text-primary text-opacity-75 animate__animated animate__slideInRight">Deja un comentario</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        <br />
-        <input type="submit" />
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 pt-5">
+          <img src="./imagenes/aroypelotafondo.jpg" width="1295" />
+        </div>
       </div>
-
-      <!-- <form class="div__nombre">
-        <h3>Sexo</h3>
-        <input type="radio" id="fh" name="fh" />
-        <label for="fh">H</label>
-        <input type="radio" id="M" name="fh" />
-        <label for="fm">M</label>
-        <input type="radio" id="fNB" name="fh" />
-        <label for="fnb">NB</label>
-        <br />
-
-        <label for="fnombre">Nombre</label>
-        <input type="text" id="fnombre" required placeholder="Nombre" />
-
-        <br />
-        <label for="faellido">Apellido</label>
-        <input type="text" id="fapellido" />
-        <br />
-        <label for="femail">Email</label>
-        <input type="email" id="femail" />
-        <br />
-        <label for="fcontraseña">Contraseña</label>
-        <input type="password" id="fcontraseña" />
-        <br />
-        <textarea placeholder="Comentarios/Sugerencias"></textarea>
-        <br />
-        <input type="submit" />
-      </form> -->
     </div>
 
     <!--pie de pagina-->
-    <footer>
-      <div class="card text-warning bg-dark">
-        <div class="card-header">
-          Autor
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p> Gaston Ruiz</p>
-            <footer class="blockquote-footer">todos los derechos reservados <cite title="Source Title">Copyright:2022</cite></footer>
-          </blockquote>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <footer>
+            <div class="card text-warning bg-dark">
+              <div class="card-header">Autor</div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Gaston Ruiz</p>
+                  <footer class="blockquote-footer">
+                    todos los derechos reservados
+                    <cite title="Source Title">Copyright:2022</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-    </footer>
+    </div>
+
     <!-- <bootstrap js -->
     <script
-    src="js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
