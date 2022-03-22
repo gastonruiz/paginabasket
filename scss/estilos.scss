@@ -1,0 +1,31 @@
+/* mapa de redes sociales */
+
+$redes: (
+  twitter: #51aff8,
+  facebook: #2956a3,
+  linkedin: #0076b8,
+  youtube: #ce1312,
+);
+
+@each $red, $color in $redes {
+  .red--#{$red} {
+    background: $color;
+    &:hover {
+      background: white;
+      .red__nombre {
+        color: $color;
+      }
+    }
+  }
+}
+/* map-get */
+.youtube {
+  color: map-get($redes, youtube);
+}
+.facebook {
+  color: map-get($redes, facebook);
+}
+
+.subrayado {
+  text-decoration: underline;
+}
