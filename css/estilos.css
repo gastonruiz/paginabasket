@@ -27,6 +27,9 @@
     .red--youtube:hover .red__nombre {
       color: #ce1312; }
 
+.btn {
+  border-radius: 5px; }
+
 /* map-get */
 .youtube {
   color: #ce1312; }
